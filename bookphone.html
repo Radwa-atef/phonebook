@@ -1,0 +1,86 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/bookstyle.css"/>
+    </head>
+    <body>
+    
+    
+              <div class="container mb-5 "> 
+                  <div class="clock">
+            <span id="hr">00</span>
+            <span> : </span>
+            <span id="min">00</span>
+            <span> : </span>
+            <span id="sec">00</span>
+              </div>
+          <br>
+                  <div class="row">
+                      <div class="col-xl-6">
+               <h1 class=" text-danger mb-3 text-center mb-5">My Book Phone</h1>
+                     <h3 class="text-center text-dark">Registration Now
+                   <button onclick="changedisplay()" class="btn btn-danger" id="mybtn">
+                      hide
+                      <i id="arrow" class="fas fa-arrow-alt-circle-up"></i>
+            </button>
+                  </h3>
+         
+                  <div id="inputsdata">
+               <div class="form-group">
+                   <label>Name</label>
+                   <input onblur="validateUserName()" id="userName" class="form-control">
+                   <div id="userNameAlert" class="alert alert-danger mt-2">username must be character</div>
+                    </div>
+            <div class="form-group">
+                   <label>Phone</label>
+                   <input onblur="validatePhone()" id="userPhone" class="form-control">
+                     <div id="phoneAlert" class="alert alert-danger mt-2">please enter true phone</div>
+ 
+                    </div>
+            <div class="form-group">
+                   <label>Email</label>
+                   <input onblur="validateMail()" id="userEmail" class="form-control"> 
+                    <div id="mailAlert" class="alert alert-danger mt-2">please enter true mail</div>
+              </div>
+                   
+            <div class="form-group">
+                   <label>Age</label>
+                   <input onblur="validateAge()"id="userAge" class="form-control">
+                   <div id="ageAlert" class="alert alert-danger mt-2">age range 10:70</div>
+            </div>
+            <button onclick="adduser()" class="btn btn-secondary" >Add</button>  
+                      <br>
+               
+            </div>
+      </div>
+         <div class="col-xl-6">
+         <div id="hide">
+        <table class="table mt-2">
+            <thead>
+                <th>Name</th>
+                <th>phone</th>
+                <th>Email</th>
+                <th>age</th>
+                <th></th>
+            </thead>
+            <tbody id="tableBody">
+            
+            </tbody> 
+        </table>
+              
+      </div>
+    </div>
+    </div>
+    </div>
+        
+        
+        
+        
+         <script src="js/jquery-3.3.1.min.js"></script>		
+           <script src="js/popper.min.js"></script>			
+           <script src="js/bootstrap.min.js"></script>
+           <script src="js/all.min.js"></script>
+           <script src="js/javaassign2.js"></script>
+    </body>
+</html>
